@@ -3,16 +3,89 @@ body {
 }
 
 #gridlayout {
-    width: 1903px;
+    width: 1890px;
     min-height: 3660px;
     margin: auto;
     display: grid;
-    grid-template-rows: 75px 1fr 377px;
+    grid-template-rows: 75px 1fr 370px;
+    font-family: Arial, Helvetica, sans-serif;
  
 }
+
+
 header{
     grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 300px 1fr 400px 300px;
+    background-color: #f7fbfe;
+    
 }
+
+header nav{
+grid-column: 2/3;
+margin-top: 18px
+
+}
+
+header nav ul{
+
+}
+header nav ul li{
+display: inline;
+list-style: none;
+margin-left: 10px;
+
+}
+header nav ul li a{
+text-decoration: none;
+color: black;
+font-weight: bold;
+font-size: 14pt;
+}
+
+header #searchbar{
+    margin: 35px;
+    grid-column: 3/4;
+}
+header #searchbar input{
+    border: none;
+    background-color: #dddddd;
+    
+}
+header #searchbar button{
+    border: none;
+    background-color: #f0f0f0;
+    
+}
+
+header #login{
+    grid-column: 4/-1;
+    display: flex;
+    width: 120px;
+    height: 20px;
+    margin-left: 180px;
+    margin-top: 33px; 
+}
+
+header #login div{
+background-color: black;
+width: 20px;
+height: 20px;
+}
+
+header #login div img{
+    width: 100%;
+}
+
+header #login button{
+    border: none;
+    width: 100px;
+    text-align: left;
+    font-size: 12px;
+}
+
+
+
 
 main{
     grid-row: 2/3;
