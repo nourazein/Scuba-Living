@@ -1,0 +1,27 @@
+body {
+  
+}
+
+#gridlayout {
+    width: 1903px;
+    min-height: 3660px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 75px 1fr 377px;
+ 
+}
+header{
+    grid-row: 1/2;
+}
+
+main{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+footer{
+    grid-row: 3/-1;
+
+}
