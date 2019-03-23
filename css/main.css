@@ -3,12 +3,12 @@ body {
 }
 
 #gridlayout {
-    width: 1890px;
+    width: 1800px;
     min-height: 3660px;
-    margin: auto;
     display: grid;
     grid-template-rows: 75px 1fr 370px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
  
 }
 
@@ -44,7 +44,8 @@ font-size: 14pt;
 }
 
 header #searchbar{
-    margin: 35px;
+    margin-left: 150px;
+    margin-top: 33px;
     grid-column: 3/4;
 }
 header #searchbar input{
@@ -97,11 +98,14 @@ main #landingpage{
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-auto-rows: 40% 20% 40%;
+    
 }
 main #landingpage img{
     grid-row: 1/-1;
     grid-column: 1/-1;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 main #landingpage #landingbox{
     background-color: #ffffff;
@@ -113,8 +117,60 @@ main #landingpage #landingbox{
     text-align: center;
 }
 main #landingpage #landingbox h2{
-    margin-top: 100px;
+    margin-top: 60px;
     font-weight: 100;
+}
+#dykkerudstyr{
+    margin-right: 60px;
+    margin-left: 60px;
+    padding-top: 50px;
+}
+
+#udstyr{
+    display: flex;
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+}
+#udstyr .udstyrimg{
+    padding: 15px;
+    padding-bottom: 50px;
+    margin: 25px;
+    border: 2px solid #d7d7d7;
+    box-shadow: 0px 1px 2px 2px #d7d7d7;
+    width: 25%;
+}
+#udstyr .udstyrimg figure img{
+    width: 80%;
+}
+#udstyr .udstyrimg figure figcaption{
+    text-align: center;
+    font-weight: bold;
+    color: #ccc;
+    margin-top: 50px;
+}
+#udstyr .udstyrimg p{
+    text-align: center;
+    font-size: 12px;
+}
+#dykkerudstyr h3{
+    text-align: center;
+    font-weight: 100;
+    font-size: 25px;
+}
+.titlebar{
+    display: flex;
+}
+.titelleft{
+    width: 50%;
+    background-color: black;
+    padding-left: 50px;
+}
+.titelleft h3{
+    color: white;
+}
+.titelright{
+    width: 50%;
+    background-color: #cccccc;
 }
 footer{
     grid-row: 3/-1;
