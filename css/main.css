@@ -91,7 +91,7 @@ header #login button{
 main{
     grid-row: 2/3;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1129px 820px 1127px 1fr;
 
 }
 main #landingpage{
@@ -121,9 +121,10 @@ main #landingpage #landingbox h2{
     font-weight: 100;
 }
 #dykkerudstyr{
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-right: 60px;
     margin-left: 60px;
-    padding-top: 50px;
 }
 
 #udstyr{
@@ -152,10 +153,44 @@ main #landingpage #landingbox h2{
     text-align: center;
     font-size: 12px;
 }
-#dykkerudstyr h3{
-    text-align: center;
-    font-weight: 100;
-    font-size: 25px;
+
+#dyk{
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    margin-right: 60px;
+    margin-left: 60px;
+}
+#dyk #dykbox{
+display: flex;
+padding-top: 50px; 
+padding-bottom: 50px;
+}
+
+#dyk #dykbox .indykbox{
+width: 50%;
+}
+#dyk #dykbox .indykbox figure{
+    padding: 50px;
+    border: 2px solid #d7d7d7;
+    border-bottom: none;
+    box-shadow: 0px -2px 3px 0px #d7d7d7;
+    
+}
+#dyk #dykbox .indykbox div{
+    background-color: black;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 50px;
+}
+#dyk #dykbox .indykbox div h4{
+    color: white;
+}
+#dyk #dykbox .indykbox div p{
+    color: #e1f0eb;
+    font-size: 12px;
+}
+#dyk #dykbox .indykbox figure img{
+width: 100%;
 }
 .titlebar{
     display: flex;
@@ -171,6 +206,11 @@ main #landingpage #landingbox h2{
 .titelright{
     width: 50%;
     background-color: #cccccc;
+}
+section h2{
+    text-align: center;
+    font-weight: 100;
+    font-size: 25px;
 }
 footer{
     grid-row: 3/-1;
